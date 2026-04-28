@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9fafc;
+  color: #333;
+}
+
+/* HEADER */
+.navbar {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo {
+  color: #16a34a;
+}
+
+
+nav a {
+  margin-left: 18px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('../images/Gerbang2.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+
+.hero h2 {
+  font-size: 3rem;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  color: #2563eb;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+}
+
+/* SECTION */
+
+.section {
+  padding: 80px 15px;
+  text-align: center;
+}
+
+.gray {
+  background: #f1f5f9;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+/* GRID */
+.grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card, .news-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.05);
+  transition: .3s;
+}
+
+.card:hover, .news-card:hover {
+  transform: translateY(-8px);
+}
+
+/* FORM */
+.form {
+  max-width: 420px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.success {
+  margin-top: 15px;
+  color: green;
+}
+
+/* FOOTER */
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 40px;
+}
+.grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,5, 1fr);
+  gap: 25px;
+}
+
+
+.card-guru {
+    text-align: center;
+    width: 180px;
+}
+
+.teacher-photo {
+    border-radius: 10px;
+}
+
+.teacher-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,.06);
+  transition: .3s;
+}
+
+.teacher-card:hover {
+  transform: translateY(-8px);
+}
+
+.teacher-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.list {
+  text-align: left;
+  margin-top: 10px;
+}
+.list li {
+  margin-bottom: 6px;
+}
+.news-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,.06);
+  transition: .3s;
+}
+
+.news-card:hover {
+  transform: translateY(-8px);
+}
+
+.news-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+
+
+.news-content {
+  padding: 15px;
+  text-align: left;
+}
+.gallery-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.06);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-top: 30px;
+}
+
+/* Judul sejajar */
+.map-area h2,
+.contact-area h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Map */
+.map-box {
+  height: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Form */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #16a34a;
+}
+
+/* Success */
+.success {
+  margin-top: 10px;
+  color: green;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact-section {
+  background: #f9fafb;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #16a34a;
+}
+
+.contact-box {
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.contact-form button {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #15803d;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+.map-box {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,.06);
+}
+
+.social-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: .3s;
+}
+
+.social-row span {
+  font-size: 20px;
+}
+
+.social-row:hover {
+  transform: scale(1.05);
+}
+
+.ig { background: linear-gradient(45deg, #f58529, #dd2a7b); }
+.yt {
+  background: #FF0000;
+}
+
+.fb { background: #1877F2; }
+.tiktok {
+  background: #1a1a1a;
+}
+
+
